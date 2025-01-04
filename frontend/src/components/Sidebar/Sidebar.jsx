@@ -1,7 +1,7 @@
 import React from 'react'
 import SearchInput from "./SearchInput";
 import ChatBox from './ChatBox';
-import LogoutButton from '../LogoutButton';
+import LogoutButton from './LogoutButton';
 
 const Sidebar = () => {
   return (
