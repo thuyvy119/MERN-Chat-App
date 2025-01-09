@@ -19,7 +19,7 @@ const Login = () => {
         <div className="w-[550px] mx-5 p-8 rounded-lg shadow-md bg-white/30 border-white/20 bg-clip-padding backdrop-filter backdrop-blur-lg ">
             <h1 className="text-3xl font-semibold text-center text-gray-500">
             Login
-            <span className="text-black"> Chat App</span>
+            <span className="bg-txt-gradient bg-clip-text text-transparent"> Chat App</span>
             </h1>
             <form className='space-y-2 mt-4 mx-10' onSubmit={handleSubmit}>
                 <div>
@@ -35,13 +35,13 @@ const Login = () => {
                     <input type='password' placeholder='Enter password' className='w-full input input-bordered h-10' value={password} onChange={(e) => setPassword(e.target.value)}/>
                 </div>
                 <div className='flex justify-end'>
-                    <Link to={'/signup'} className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'>
+                    <Link to={'/signup'} className='text-sm hover:underline hover:text-blue-600 mt-3 inline-block'>
                         {"Don't"} have an account?
                     </Link>
                 </div>
 
                 <div>
-                    <button className="btn btn-block btn-sm mt-2 bg-black/90 text-white hover:bg-black/60 active:bg-gray-600 border-none" disabled={loading}> {loading ? <span className='loading loading-spinner'></span>: "Login"} 
+                    <button className="btn btn-block btn-sm mt-3 bg-select-bg text-white text-lg py-1 hover:bg-hover active:bg-gray-600 border-none h-10 flex items-center justify-center" disabled={loading}> {loading ? <span className='loading loading-spinner'></span>: "Login"} 
                     </button>
                 </div>
             </form>

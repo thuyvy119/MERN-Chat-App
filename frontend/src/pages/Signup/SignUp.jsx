@@ -31,14 +31,14 @@ const SignUp = () => {
             <div className="w-[550px] mx-5 p-8 rounded-lg shadow-md bg-white/30 border-white/20 bg-clip-padding backdrop-filter backdrop-blur-lg ">
             <h1 className="text-3xl font-semibold text-center text-gray-500">
                 Sign up
-                <span className="text-black"> Chat App</span>
+                <span className="bg-txt-gradient bg-clip-text text-transparent"> Chat App</span>
             </h1>
             <form className='space-y-2 mt-4 mx-10' onSubmit={handleSubmit}>
                 <div>
                     <label className='label p-2'>
                         <span className='text-base label-text'>Full Name</span>
                     </label>
-                    <input type='text' placeholder='David Wan' className='w-full input input-bordered h-10' value={inputs.fullName} onChange={(e) => setInputs({...inputs, fullName: e.target.value})}
+                    <input type='text' placeholder='Enter your full name' className='w-full input input-bordered h-10' value={inputs.fullName} onChange={(e) => setInputs({...inputs, fullName: e.target.value})}
                     />
                 </div>
 
@@ -46,7 +46,7 @@ const SignUp = () => {
                     <label className='label p-2'>
                         <span className='text-base label-text'>Username</span>
                     </label>
-                    <input type='text' placeholder='davidwan' className='w-full input input-bordered h-10' value={inputs.username} onChange={(e) => setInputs({...inputs, username: e.target.value})}/>
+                    <input type='text' placeholder='Enter username' className='w-full input input-bordered h-10' value={inputs.username} onChange={(e) => setInputs({...inputs, username: e.target.value})}/>
                 </div>
 
                 <div>
@@ -82,7 +82,7 @@ const SignUp = () => {
                 </div>
 
                 <div>
-                    <button className="btn btn-block btn-sm mt-2 bg-black/90 text-white hover:bg-black/60 active:bg-gray-600 border-none" disabled={loading}> {loading ? <span className='loading loading-spinner'></span> :"Sign up"}
+                    <button className="btn btn-block btn-sm mt-3 bg-select-bg text-white text-lg py-1 hover:bg-hover active:bg-gray-600 border-none h-10 flex items-center justify-center border-none" disabled={loading}> {loading ? <span className='loading loading-spinner'></span> :"Sign up"}
                     </button>
                 </div>
 
